@@ -246,16 +246,16 @@ float Vector::DistToSqr(const Vector &vOther) const
 	return delta.LengthSqr();
 }
 //===============================================
-inline float Vector::NormalizeInPlace()
-{
-	Vector& v = *this;
-
-	float iradius = 1.f / (this->Length() + 1.192092896e-07F); //FLT_EPSILON
-
-	v.x *= iradius;
-	v.y *= iradius;
-	v.z *= iradius;
-}
+//inline float Vector::NormalizeInPlace()
+//{
+//	Vector& v = *this;
+//
+//	float iradius = 1.f / (this->Length() + 1.192092896e-07F); //FLT_EPSILON
+//
+//	v.x *= iradius;
+//	v.y *= iradius;
+//	v.z *= iradius;
+//}
 //===============================================
 inline Vector Vector::operator+(const Vector& v) const
 {
